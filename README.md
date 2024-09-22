@@ -32,4 +32,4 @@ Added the following resources for to host Jenkins -
 -   kubectl apply -f service.yaml
 
 -       kubectl create secret docker-registry regcred --docker-server=[https://index.docker.io/v1/]--docker-username=<your-name> --docker-password=<your-pword> --docker-email=<your-email>
--       kubectl create secret generic regcred --from-file=.dockerconfigjson=/Users/shabinasingh/.docker/config.json --type=kubernetes.io/dockerconfigjson
+-       kubectl create secret generic regcred --from-file=.dockerconfigjson=~/.docker/config.json --type=kubernetes.io/dockerconfigjson
